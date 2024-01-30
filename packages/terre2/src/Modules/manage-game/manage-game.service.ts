@@ -48,7 +48,7 @@ export class ManageGameService {
       return false;
     }
     // 创建文件夹
-    await this.webgalFs.mkdir(
+    this.webgalFs.mkdir(
       this.webgalFs.getPathFromRoot('/public/games'),
       gameName,
     );
